@@ -16,33 +16,43 @@ body {
   line-height: 1.4;
 }
 
-.main-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+/* Navigation Bar Styling */
+.navbar {
   position: fixed;
   width: 100%;
-  min-height: 60px;
-  padding: 0 20px;
   background-color: #ccc;
   z-index: 1;
 }
 
-.nav-links {
+.navbar-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 60px;
   display: flex;
-  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-list {
+  display: flex;
+  gap: 20px;
   list-style-type: none;
   padding: 0;
 }
 
-.nav-links li a {
+.nav-list li a {
   text-decoration: none;
   color: #333;
   font-weight: 500;
 }
 
-.nav-links li a:hover {
+.nav-list li a:hover {
   color: #1483d5;
+}
+
+.logo-img {
+  height: 24px;
 }
 
 .button {
@@ -127,6 +137,7 @@ body {
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .features {
@@ -227,9 +238,10 @@ footer {
 
 /* On screens that are 768px wide or less, make the menu links stack on top of each other instead of next to each other */
 @media screen and (max-width: 768px) {
-  .main-nav {
-    float: none;
+  .navbar-container {
+    /* float: none; */
     flex-direction: column;
+    padding: 0 10px;
   }
 
   .hero {
