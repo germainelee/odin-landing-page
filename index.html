@@ -9,8 +9,9 @@
 </head>
 
 <body>
+    <!-- Navigation -->
     <header class="navbar">
-        <div class="navbar-container">
+        <div class="container navbar-container">
             <a href="index.html"><img class="logo-img" img src="assets/ForYou-logo.png" alt="logo"></a>
             <nav class="nav">
                 <ul class="nav-list">
@@ -22,71 +23,95 @@
         </div>
     </header>
 
+    <!-- Hero Section -->
     <section id="hero" class="hero">
-        <div class="hero_content">
-            <h1 class="hero_title">Big Title</h1>
-            <p class="hero_body">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat
-                mattis eros. Nullam malesuada erat ut turpis.</p>
-            <button class="button btn_secondary">CTA Button</button>
-        </div>
-        <!-- <div class="hero_imageColumn"> -->
-        <div class="hero_imageContainer">
-            <img img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute-page-main-image.jpg"
-                alt="hero image">
-        </div>
-        <!-- </div> -->
-    </section>
-
-    <section id="features" class="features">
-        <h2 class="section_title">H2 Title</h2>
-        <ul class="feature_items">
-            <li class="feature_card">
-                <div class="feature_image">
-                    <img img src="https://www.freecodecamp.org/static/wide-image-becdb4c281c527b989315b2f7ce20378.png"
-                        alt="icon 1">
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis
-                    eros. Nullam malesuada erat ut turpis.</p>
-            </li>
-            <li class="feature_card">
-                <div class="feature_image">
-                    <img img src="https://www.freecodecamp.org/static/wide-image-becdb4c281c527b989315b2f7ce20378.png"
-                        alt="icon 1">
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis
-                    eros. Nullam malesuada erat ut turpis.</p>
-            </li>
-            <li class="feature_card">
-                <div class="feature_image">
-                    <img img src="https://www.freecodecamp.org/static/wide-image-becdb4c281c527b989315b2f7ce20378.png"
-                        alt="icon 1">
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis
-                    eros. Nullam malesuada erat ut turpis.</p>
-            </li>
-        </ul>
-    </section>
-
-    <section id="testimonial" class="testimonial">
-        <div class="testimonial_content">
-            <p class="testimonial_quote"><i>"They make our life split between two continents possible. Transfers are
-                    simple
-                    and very, very
-                    fast."</i></p>
-            <p class="testimonial_author"><strong>—Author Name</strong></p>
-        </div>
-    </section>
-
-    <section id="cta" class="cta">
-        <div class="cta_container">
-            <div class="cta_content">
-                <h2>Ready to Get Started?</h2>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+        <div class="container hero-container">
+            <div class="hero_content">
+                <h1 class="hero_title">Big Title</h1>
+                <p class="hero_body">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque
+                    volutpat
+                    mattis eros. Nullam malesuada erat ut turpis.</p>
+                <a class="button btn_primary" href="#" role="button">Get started</a>
             </div>
-            <button class="button btn_primary">CTA Button</button>
+            <div class="hero_imageContainer">
+                <img img src="assets/hero-image.png" alt="hero image">
+            </div>
         </div>
     </section>
 
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section_title">Our Features</h2>
+            <ul class="features-list">
+                <li class="feature_card">
+                    <div class="feature_image">
+                        <img img
+                            src="https://www.freecodecamp.org/static/wide-image-becdb4c281c527b989315b2f7ce20378.png"
+                            alt="icon 1">
+                    </div>
+                    <div class="feature-content">
+                        <h3 class="feature-title">Feature 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis
+                            eros. Nullam malesuada erat ut turpis.</p>
+                    </div>
+                </li>
+                <li class="feature_card">
+                    <div class="feature_image">
+                        <img img
+                            src="https://www.freecodecamp.org/static/wide-image-becdb4c281c527b989315b2f7ce20378.png"
+                            alt="icon 1">
+                    </div>
+                    <div class="feature-content">
+                        <h3 class="feature-title">Feature 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis
+                            eros. Nullam malesuada erat ut turpis.</p>
+                    </div>
+                </li>
+                <li class="feature_card">
+                    <div class="feature_image">
+                        <img img
+                            src="https://www.freecodecamp.org/static/wide-image-becdb4c281c527b989315b2f7ce20378.png"
+                            alt="icon 1">
+                    </div>
+                    <div class="feature-content">
+                        <h3 class="feature-title">Feature 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis
+                            eros. Nullam malesuada erat ut turpis.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section id="testimonial" class="testimonial">
+        <div class="container">
+            <p class="testimonial_quote">"They make our life split between two continents possible. Transfers are
+                simple
+                and very, very
+                fast."</p>
+            <p class="testimonial_author">—Author Name</p>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section id="cta" class="cta">
+        <div class="container">
+            <div class="cta-card">
+                <!-- <div class="cta_content"> -->
+                <h2 class="section_title">Ready to Get Started?</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                <!-- </div> -->
+                <div class="button-group">
+                    <a class="button btn_primary" href="#" role="button">Sign up now</a>
+                    <a class="button btn_secondary" href="#" role="button">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <p>Copyright &copy; The Odin Project 2024 — by Germaine Lee</p>
     </footer>
